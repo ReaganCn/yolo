@@ -18,6 +18,8 @@ services:
     tty: true
   mongodb:
     image: mongo:latest
+    volumes:
+      - backend-mongodb:/data/db
     networks:
     - custom-network
 networks:
