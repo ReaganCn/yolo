@@ -12,6 +12,3 @@ COPY ./ /frontend
 
 # Install dependencies
 RUN npm install
-
-# Start the application
-CMD npm start
