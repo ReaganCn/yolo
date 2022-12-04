@@ -12,8 +12,3 @@ COPY ./ /backend
 
 # Install dependencies
 RUN npm install
-
-EXPOSE 5050
-
-# Start the application
-CMD npm start
