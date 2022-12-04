@@ -1,23 +1,20 @@
-# Requirements
-Make sure that you have the following installed:
-- [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
-- npm 
-- [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) and start the mongodb service with `sudo service mongod start`
+# Yolo Ecommerce platform
 
-## Navigate to the Client Folder 
- `cd client`
+## Author: Reagan Charana
 
-## Run the folllowing command to install the dependencies 
- `npm install`
+## About the project
 
-## Run the folllowing to start the app
- `npm start`
+Yolo is a simple ecommerce platform written in reactjs and node. It uses the nosql database mongodb. 
 
-## Open a new terminal and run the same commands in the backend folder
- `cd ../backend`
+## How to run
+Utilizes separate containers for both frontend and backend. But are connected to the same network as defined on the `docker-compose.yml`
 
- `npm install`
+Make sure you have <a href="https://docs.docker.com/engine/install/"> Docker</a> and <a href="https://docs.docker.com/compose/install/"> Docker Compose</a> installed
 
- `npm start`
+Build using docker compose
+ - Clone the project
+ - Navigate into the project root directory: `cd yolo`
+ - Run `docker-compose build` in your terminal to build the docker compose file.
+ - Then run  `docker-compose up` to run the containers.
 
- ### Go ahead a nd add a product (note that the price field only takes a numeric input)
+Finally Navigate to <a href="http://localhost:3000"></a> in your browser
