@@ -1,8 +1,8 @@
 # Get the base node image
 FROM node:16-alpine 
 
-# Author: Moringa School
-LABEL maintainer="Moringa School <moringaschool.com>"
+# Author: Reagan Charana
+LABEL maintainer="Reagan Charana <reagan.charana@student.moringaschool.com>"
 
 # Set the working directory to /frontend
 WORKDIR /frontend
