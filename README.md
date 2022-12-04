@@ -1,6 +1,6 @@
 # Yolo Ecommerce platform
 
-## Author: Reagan Charana
+### Author: Reagan Charana
 
 ## About the project
 
@@ -18,3 +18,7 @@ Build using docker compose
  - Then run  `docker-compose up` to run the containers.
 
 Finally Navigate to <a href="http://localhost:3000" target="blank">localhost:3000</a> in your browser
+
+### Image links
+- <a href="https://hub.docker.com/repository/docker/reagancn/yolo-client" target="blank">yolo client</a>
+- <a href="https://hub.docker.com/repository/docker/reagancn/yolo-backend" target="blank">yolo backend</a>
