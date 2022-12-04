@@ -2,15 +2,7 @@ version: "1.0"
 services:
   client:
     build: ./client
-    command: npm start
-    depends_on:
-    - backend
+    entrypoint: npm start
     ports:
     - 3000:3000
-  backend:
-    build: ./backend
-    command: npm start
-    depends_on:
-    - mongodb
-  mongodb:
-    image: mongo:latest
+    tty: true
