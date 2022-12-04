@@ -17,4 +17,4 @@ Build using docker compose
  - Run `docker-compose build` in your terminal to build the docker compose file.
  - Then run  `docker-compose up` to run the containers.
 
-Finally Navigate to <a href="http://localhost:3000"></a> in your browser
+Finally Navigate to <a href="http://localhost:3000" target="_blank">localhost:3000</a> in your browser
