@@ -24,4 +24,6 @@ services:
     - custom-network
 networks:
   custom-network:
-    driver: bridge  
+    driver: bridge
+volumes:
+  backend-mongodb:
