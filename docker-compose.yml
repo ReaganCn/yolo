@@ -1,8 +1,8 @@
-version: "1.0"
+version: "2.0"
 services:
   client:
     build: ./client
-    image: yolo-client:1.0
+    image: yolo-client:1.2
     entrypoint: npm start
     ports:
     - 3000:3000
@@ -11,7 +11,7 @@ services:
       - custom-network
   backend:
     build: ./backend
-    image: yolo-backend:1.0
+    image: yolo-backend:1.2
     environment:
     - MONGODB_URI=mongodb://mongodb:27017/yolomy
     entrypoint: npm start
@@ -29,5 +29,10 @@ services:
 networks:
   custom-network:
     driver: bridge
+    ipam: 
+      driver: default
+      config: 
+      - subnet: "192.168.128.0/24"
+        gateway:  "192.168.128.1"
 volumes:
   backend-mongodb:
