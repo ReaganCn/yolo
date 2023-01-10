@@ -7,6 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "geerlingguy/ubuntu2004"
   config.vm.network :private_network, ip: "192.168.56.252"
   config.vm.hostname = "yolos"
+  config.vm.network "forwarded_port", guest: 5050, host: 5050, protocol: "tcp"
   config.ssh.insert_key = false
 
   config.vm.provider :virtualbox do |v|
