@@ -6,7 +6,15 @@
 
 Yolo is a simple ecommerce platform written in reactjs and node. It uses the nosql database mongodb. 
 
-## How to run
+## Setting up and Running the project in a VM
+
+For details see [Explanation.md](explanation.md).
+
+Make sure you have [Vagrant](https://developer.hashicorp.com/vagrant/docs/installation) and [ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) installed.
+
+Open a terminal in the root folder of the project. Then exectute `vagrant up`. This will setup a virtual machine and provision ansible configuration using `playbook.yml`.
+
+## Running the project directly from your computer
 Utilizes separate containers for both frontend and backend. But are connected to the same network as defined on the `docker-compose.yml`
 
 Make sure you have <a href="https://docs.docker.com/engine/install/"> Docker</a> and <a href="https://docs.docker.com/compose/install/"> Docker Compose</a> installed
