@@ -30,8 +30,8 @@
   
   roles:
     - setup-docker
-    - client
-    - backend
+    - client-role
+    - backend-role
 
   tasks:
   - name: "Start MongoDB container"
